@@ -18,6 +18,7 @@ namespace projektWPF
         private Game game;
         private Dictionary<GameElement, Rectangle> elementToUI;
         private const int BlockSize = 40;
+        private const int StatusBarHeight = 30;
 
         public MainWindow()
         {
@@ -30,8 +31,18 @@ namespace projektWPF
             game.OnGameRestarted += InitializeGameCanvas; // Update UI when the game restarts
 
             InitializeGameCanvas();
+            ResizeWindowToFitMap();
             game.OnTickEvent += UpdateGameCanvas;
             game.Start();
+        }
+
+        private void ResizeWindowToFitMap()
+        {
+            int mapWidth = game.Width;
+            int mapHeight = game.Height;
+
+            this.Width = mapWidth * BlockSize + 20; // Adding margin for window border
+            this.Height = mapHeight * BlockSize + StatusBarHeight + 40; // Adding margin for window border and status bar
         }
 
         private void InitializeGameCanvas()
