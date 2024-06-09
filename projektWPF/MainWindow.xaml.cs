@@ -25,7 +25,7 @@ namespace projektWPF
             game = new Game();
             elementToUI = new Dictionary<GameElement, Rectangle>();
 
-            game.Elements = MapParser.ParseMap("C:\\Users\\Patrik\\Documents\\map.txt", game);
+            game.Elements = MapParser.ParseMap("map.txt", game);
             game.OnElementChanged += OnElementChanged;
             game.OnGameRestarted += InitializeGameCanvas; // Update UI when the game restarts
 
