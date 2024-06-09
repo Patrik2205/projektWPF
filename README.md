@@ -81,12 +81,3 @@ Tento program je implementací klasické hry Boulder Dash v jazyce C# s využit�
 ### `MapParser.cs`
 - **MapParser**: Třída pro načítání mapy z textového souboru.
   - `List<GameElement> ParseMap(string filePath, Game game)`: Načítá mapu ze zadaného souboru a inicializuje herní prvky.
-
-### `App.xaml.cs`
-- **App**: Hlavní třída aplikace.
-  - Dědí z `Application` a slouží jako vstupní bod aplikace.
-
-### `AssemblyInfo.cs`
-- **AssemblyInfo**: Obsahuje informace o sestavení a nastavení pro zdroje aplikace.
-
-Tato dokumentace popisuje základní strukturu a funkcionalitu herních prvků a logiku hry Boulder Dash. Pokud máte jakékoliv další dotazy nebo potřebujete podrobnější informace, neváhejte se zeptat!
