@@ -92,5 +92,3 @@ Tento program je implementací klasické hry Boulder Dash v jazyce C# s využit�
 
 ### `CustomMessageBox.xaml.cs`
 - **CustomMessageBox.xaml.cs**: Obsahuje logiku pro zpracování kliknutí na tlačítka dialogového okna a vrácení výsledku.
-
-Tato dokumentace popisuje základní strukturu a funkcionalitu herních prvků a logiku hry Boulder Dash. Pokud máte jakékoliv další dotazy nebo potřebujete podrobnější informace, neváhejte se zeptat!
