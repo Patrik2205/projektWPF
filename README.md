@@ -81,3 +81,14 @@ Tento program je implementací klasické hry Boulder Dash v jazyce C# s využit�
 ### `MapParser.cs`
 - **MapParser**: Třída pro načítání mapy z textového souboru.
   - `List<GameElement> ParseMap(string filePath, Game game)`: Načítá mapu ze zadaného souboru a inicializuje herní prvky.
+
+### `CustomMessageBox.xaml`
+- **CustomMessageBox**: Okno pro zobrazení vlastního dialogového okna.
+  - `enum CustomMessageBoxResult`: Výsledek dialogového okna (`Restart`, `Quit`).
+  - `CustomMessageBoxResult Result`: Ukládá výsledek dialogového okna.
+  - `CustomMessageBox(string message, string title)`: Konstruktor, který nastaví zprávu a titul dialogového okna.
+  - `void RestartButton_Click(object sender, RoutedEventArgs e)`, `void QuitButton_Click(object sender, RoutedEventArgs e)`: Metody pro zpracování kliknutí na tlačítka.
+  - `static CustomMessageBoxResult Show(string message, string title)`: Statická metoda pro zobrazení dialogového okna.
+
+### `CustomMessageBox.xaml.cs`
+- **CustomMessageBox.xaml.cs**: Obsahuje logiku pro zpracování kliknutí na tlačítka dialogového okna a vrácení výsledku.
