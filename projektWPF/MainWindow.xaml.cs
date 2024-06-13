@@ -28,7 +28,7 @@ namespace projektWPF
 
             game.Elements = MapParser.ParseMap("map.txt", game);
             game.OnElementChanged += OnElementChanged;
-            game.OnGameRestarted += InitializeGameCanvas; // Update UI when the game restarts
+            game.OnGameRestarted += InitializeGameCanvas;
 
             InitializeGameCanvas();
             ResizeWindowToFitMap();
@@ -41,8 +41,8 @@ namespace projektWPF
             int mapWidth = game.Width;
             int mapHeight = game.Height;
 
-            this.Width = mapWidth * BlockSize + 20; // Adding margin for window border
-            this.Height = mapHeight * BlockSize + StatusBarHeight + 40; // Adding margin for window border and status bar
+            this.Width = mapWidth * BlockSize + 20;
+            this.Height = mapHeight * BlockSize + StatusBarHeight + 40;
         }
 
         private void InitializeGameCanvas()
